@@ -1,0 +1,21 @@
+.mapview__container {
+  position: sticky;
+  top: 0;
+}
+
+.card {
+  position: relative;
+  z-index: 150 !important;
+}
+
+.triangle {
+  background-color: white;
+  height: 15px;
+  width: 15px;
+  transform: rotateZ(45deg);
+  position: absolute;
+  bottom: -7.5px;
+  z-index: 29;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
