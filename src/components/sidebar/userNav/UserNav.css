@@ -1,0 +1,77 @@
+.userNav {
+  flex: 0.2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-height: 70px;
+  padding: 0px 15px;
+}
+
+.userNav__container {
+  border-radius: 25px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  padding-right: 7px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.userNav__container--avatar {
+  width: 35px !important;
+  height: 35px !important;
+}
+
+.userNav__container--username {
+  font-size: small;
+  font-weight: 600;
+  padding: 0px 5px;
+}
+
+.userNav__container--icon {
+  font-size: 25px;
+}
+
+.userNavDetails {
+  border-radius: 10px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 7px 0px;
+  padding: 5px 0px;
+  width: 80%;
+  background-color: white;
+  z-index: 1;
+}
+
+.userNavDetails__option {
+  width: 80%;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 25px;
+}
+
+.userNavDetails__option:hover {
+  background-color: rgba(179, 178, 194, 0.3);
+}
+
+.userNavDetails__option--icon {
+  font-size: 21px;
+  margin-right: 15px;
+}
+
+.userNavDetails__option--text {
+  font-weight: 500;
+  font-size: small;
+}

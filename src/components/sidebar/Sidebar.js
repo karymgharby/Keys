@@ -1,39 +1,68 @@
-import "./Sidebar.css"
-import UserNav from "./userNav/UserNav"
-import { RiCompassDiscoverLine } from "react-icons/ri";
-import { BsBookmarkDash, BsChatLeft, BsBell } from "react-icons/bs";
+import "./Sidebar.css";
+import UserNav from "./userNav/UserNav";
+import { MdAssistantNavigation } from "react-icons/md";
+import {
+  BsFillBookmarkFill,
+  BsFillChatFill,
+  BsFillBellFill,
+} from "react-icons/bs";
+import { useState } from "react";
+import logo from "../../assets/logo-watermark.png";
 
 function Sidebar() {
-    return (
-       <div className="sidebar">
-         <UserNav/>
-         <div className="sidebar__navlinks">
+  const [selectedNav, setSelectedNav] = useState(1);
 
-           <div className="sidebar__navlinks__option">
-             <p className="sidebar__navlinks__option--text">Discover</p>
-             <RiCompassDiscoverLine className="sidebar__navlinks__option--icon"/>
-           </div>
+  return (
+    <div className="sidebar">
+      <UserNav />
+      <div className="sidebar__navlinks">
+        <div
+          className={`sidebar__navlinks__option ${
+            selectedNav === 1 ? "selectedNav" : ""
+          }`}
+          onClick={() => setSelectedNav(1)}
+        >
+          <MdAssistantNavigation className="sidebar__navlinks__option--icon" />
+          <p className="sidebar__navlinks__option--text">Discover</p>
+        </div>
 
-           <div className="sidebar__navlinks__option">
-             <p className="sidebar__navlinks__option--text">Saved</p>
-             <BsBookmarkDash className="sidebar__navlinks__option--icon"/>
-           </div>
+        <div
+          className={`sidebar__navlinks__option ${
+            selectedNav === 2 ? "selectedNav" : ""
+          }`}
+          onClick={() => setSelectedNav(2)}
+        >
+          <BsFillBookmarkFill className="sidebar__navlinks__option--icon" />
+          <p className="sidebar__navlinks__option--text">Saved</p>
+        </div>
 
-           <div className="sidebar__navlinks__option">
-             <p className="sidebar__navlinks__option--text">Chat</p>
-             <BsChatLeft className="sidebar__navlinks__option--icon"/>
-           </div>
+        <div
+          className={`sidebar__navlinks__option ${
+            selectedNav === 3 ? "selectedNav" : ""
+          }`}
+          onClick={() => setSelectedNav(3)}
+        >
+          <BsFillChatFill className="sidebar__navlinks__option--icon" />
+          <p className="sidebar__navlinks__option--text">Chat</p>
+        </div>
 
-           <div className="sidebar__navlinks__option">
-             <p className="sidebar__navlinks__option--text">Notifications</p>
-             <BsBell className="sidebar__navlinks__option--icon"/>
-           </div>
+        <div
+          className={`sidebar__navlinks__option ${
+            selectedNav === 4 ? "selectedNav" : ""
+          }`}
+          onClick={() => setSelectedNav(4)}
+        >
+          <BsFillBellFill className="sidebar__navlinks__option--icon" />
+          <p className="sidebar__navlinks__option--text">Notifications</p>
+        </div>
+      </div>
 
-         </div>
-       </div>
-    )
+      <div className="sidebar__credits">
+        <img src={logo} alt="keys-logo" className="sidebar__credits--logo" />
+        <p className="sidebar__credits--text">© 2022 Keys, Inc.</p>
+      </div>
+    </div>
+  );
 }
 
-export default Sidebar
-
- 
+export default Sidebar;
