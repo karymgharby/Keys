@@ -1,11 +1,11 @@
 
 import './App.css';
-import Sidebar from './components/Sidebar'
+import Discover from "./pages/discover/Discover"
 function App() {
   return (
     <div className="App">
         <div className=''>
-          <Sidebar/>
+          <Discover/>
         </div> 
     </div>
   );
