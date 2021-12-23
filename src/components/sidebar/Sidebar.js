@@ -7,14 +7,17 @@ import {
   BsFillBellFill,
 } from "react-icons/bs";
 import { useState } from "react";
-import logo from "../../assets/logo-watermark.png";
+import logo from "../../assets/logo.png";
+import logoWatermark from "../../assets/logo-watermark.png";
 
 function Sidebar() {
   const [selectedNav, setSelectedNav] = useState(1);
 
   return (
     <div className="sidebar">
-      <UserNav />
+      <div className="sidebar__logo">
+        <img src={logo} alt="keys-logo" className="sidebar__logo--image" />
+      </div>
       <div className="sidebar__navlinks">
         <div
           className={`sidebar__navlinks__option ${
@@ -57,8 +60,14 @@ function Sidebar() {
         </div>
       </div>
 
+      <UserNav />
+
       <div className="sidebar__credits">
-        <img src={logo} alt="keys-logo" className="sidebar__credits--logo" />
+        <img
+          src={logoWatermark}
+          alt="keys-logo"
+          className="sidebar__credits--logo"
+        />
         <p className="sidebar__credits--text">© 2022 Keys, Inc.</p>
       </div>
     </div>
