@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.carte__main {
+  max-width: 600px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  display: flex;
+  padding: 3px 6px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.carte__img {
+  display: block;
+  border-radius: 10px;
+}
+/*description*/
+.carte_detaille {
+  padding: 0px 20px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.localisation {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  color: #6e798c;
+}
+/*house_name*/
+.house_name {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  color: #081f32;
+}
+
+/*description_house*/
+.house_descriptin {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 16px;
+  color: #6e798c;
+  max-width: 300px;
+}
+/*Rating*/
+.rating_price {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rating {
+  font-size: 20px !important;
+}
+/*house_price*/
+.house_price {
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-size: 13px;
+}
+.house_price > span {
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 60px;
+  text-align: right;
+  letter-spacing: 0.02em;
+  color: #2182e9;
+}
+
+/*icons*/
+.house_icons {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+
+  line-height: 25px;
+  color: #6e798c;
+  margin-right: 20px;
+}
+.icon_img {
+  margin-right: 5px;
+  font-size: 20px;
+}
+.icon_detaile {
+  font-size: 12px;
+}
