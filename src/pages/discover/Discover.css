@@ -14,11 +14,11 @@
   flex: 1;
 }
 
-h1 {
+.page__title {
   margin-bottom: 5px;
 }
 
-p {
+.page__navigation {
   opacity: 0.7;
   margin-bottom: 10px;
 }

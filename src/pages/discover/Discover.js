@@ -7,8 +7,8 @@ export default function Discover() {
     <div className="discover">
       <Sidebar />
       <div className="discover__posts">
-        <h1>Discover</h1>
-        <p>Discover {">"} Houses</p>
+        <h1 className="page__title">Discover</h1>
+        <p className="page__navigation">Discover {">"} Houses</p>
 
         <Post
           postLocalisation="25th st , Manouba , Tunis "
