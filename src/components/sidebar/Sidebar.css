@@ -8,8 +8,7 @@
   padding: 30px 20px;
   flex: 0.2;
   max-width: 20%;
-  min-width: 190px;
-  position: relative;
+  min-width: 250px;
 }
 
 .sidebar__logo {
