@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
-import ReactMapGL, { Marker, NavigationControl } from "react-map-gl";
+import ReactMapGL, { NavigationControl } from "react-map-gl";
 import "./Map.css";
+import searchicon from '../../assets/Icons/search.icon.svg'
+import MarkerHome from './marker/Map.Marker'
 
-import { MdPlace } from "react-icons/md";
+
 export default function Map() {
 
   const navControlStyle = {
@@ -15,7 +17,7 @@ export default function Map() {
     height: "100vh",
     latitude: 36.710161050637595,
     longitude: 10.428860882171598,
-    zoom: 12,
+    zoom: 13,
   });
 
   useEffect(() => {
@@ -24,7 +26,7 @@ export default function Map() {
       setViewport({
         width: "35vw",
         height: "100vh",
-        zoom: 12,
+        zoom: 13,
         latitude: pos.coords.latitude,
         longitude: pos.coords.longitude,
       });
@@ -34,9 +36,10 @@ export default function Map() {
 
   return (
     <div className="mapview__container">
+      
       <ReactMapGL
         className="mapview__map"
-        mapStyle="mapbox://styles/mapbox/light-v10"
+        mapStyle="mapbox://styles/karimghar/ckxkyhjh0kpby14mj0husi1i5"
         {...viewport}
         mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
         onViewportChange={(nextViewport) => setViewport(nextViewport)}
@@ -47,15 +50,12 @@ export default function Map() {
         //   })
         // }
       >
-        <Marker
-          latitude={36.710161050637595}
-          longitude={10.428860882171598}
-          offsetLeft={-30}
-          offsetTop={-50}
-        >
-          {/* House main image */}
-          <MdPlace style={{ color: "blue", width: 40, height: 50 }} />
-        </Marker>
+        <div className="map__search">
+          <input placeholder="Search..." className="map__search--input" />
+          <img src={searchicon} alt="Search" className="map__search--icon"/>
+        </div>
+       
+        <MarkerHome/>
 
         <NavigationControl style={navControlStyle} />
       </ReactMapGL>

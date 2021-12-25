@@ -2,3 +2,61 @@
   position: sticky;
   top: 0;
 }
+
+
+
+
+.marker--icon{
+  padding:7px;
+  background-color:#6135ff;
+  border-radius:50%;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transition: .3s ease-in-out
+}
+
+.marker:hover .marker__info{
+  visibility:visible;
+}
+
+.marker__info{
+  visibility:hidden;
+  background-color: white;
+  padding:5px 10px;
+  border-radius: 10px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+
+.marker__info--img{
+  width:130px;
+  border-radius:10px;
+  margin-bottom: 3px;
+}
+
+.marker__info--title{
+  font-size:small;
+}
+
+.marker__info--price{
+  color:#2A8BF2 ;
+  margin-top:2px;
+  font-weight: 500;
+}
+
+.map__search{
+  display: flex;
+  align-items:center;
+  justify-content:space-between;
+  margin: 30px 50px;
+  border-radius: 20px;
+  width: 80%;
+  padding: 0px 20px;
+  background-color:#fff;
+}
+
+.map__search--input{
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  flex:1;
+  font-weight: 500;
+}
