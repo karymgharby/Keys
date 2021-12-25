@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
 import ReactMapGL, { NavigationControl } from "react-map-gl";
 import "./Map.css";
-import searchicon from '../../assets/Icons/search.icon.svg'
-import MarkerHome from './marker/Map.Marker'
-
+import searchicon from "../../assets/Icons/search.icon.svg";
+import MarkerHome from "./marker/Map.Marker";
 
 export default function Map() {
-
   const navControlStyle = {
     right: 10,
     bottom: 30,
@@ -36,10 +34,9 @@ export default function Map() {
 
   return (
     <div className="mapview__container">
-      
       <ReactMapGL
         className="mapview__map"
-        mapStyle="mapbox://styles/karimghar/ckxkyhjh0kpby14mj0husi1i5"
+        mapStyle={process.env.REACT_APP_MAPBOX_STYLE}
         {...viewport}
         mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
         onViewportChange={(nextViewport) => setViewport(nextViewport)}
@@ -52,10 +49,10 @@ export default function Map() {
       >
         <div className="map__search">
           <input placeholder="Search..." className="map__search--input" />
-          <img src={searchicon} alt="Search" className="map__search--icon"/>
+          <img src={searchicon} alt="Search" className="map__search--icon" />
         </div>
-       
-        <MarkerHome/>
+
+        <MarkerHome />
 
         <NavigationControl style={navControlStyle} />
       </ReactMapGL>
