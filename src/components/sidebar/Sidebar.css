@@ -82,3 +82,29 @@
   font-size: x-small;
   font-weight: 500;
 }
+
+.userNav__container {
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.userNav__container:hover {
+  background-color: white;
+}
+
+.userNav__container--avatar {
+  width: 40px !important;
+  height: 40px !important;
+  margin-right: 10px;
+}
+
+.userNav__container--username {
+  padding-right: 10px;
+}
