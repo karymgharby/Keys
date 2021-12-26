@@ -9,7 +9,7 @@ import logoWatermark from "../../assets/logo-watermark.png";
 import { Link } from "react-router-dom";
 
 function Sidebar() {
-  const [selectedNav, setSelectedNav] = useState(1);
+  const [selectedNav, setSelectedNav] = useState(2);
 
   return (
     <div className="sidebar">

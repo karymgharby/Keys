@@ -2,7 +2,7 @@ import "./App.css";
 import Discover from "./pages/discover/Discover";
 import { Routes, Route } from "react-router-dom";
 import Sidebar from "./components/sidebar/Sidebar";
-import DiscoverDetails from "./pages/discover/DiscoverDetails";
+import PostDetails from "./pages/post.details/PostDetails";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <div className="app__main">
         <Routes>
           <Route path="/" element={<Discover />} />
-          <Route path="/post/details" element={<DiscoverDetails />} />
+          <Route path="/post/details" element={<PostDetails />} />
         </Routes>
       </div>
     </div>
