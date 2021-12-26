@@ -1,0 +1,25 @@
+.Postdeatils {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.Postdeatils__post {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 30px;
+  flex: 1;
+}
+
+.page__title {
+  margin-bottom: 5px;
+}
+
+.page__navigation {
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
