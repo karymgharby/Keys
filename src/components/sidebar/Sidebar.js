@@ -6,6 +6,7 @@ import { BsBookmarkHeart, BsChat, BsCalendarRange } from "react-icons/bs";
 import { useState } from "react";
 import logo from "../../assets/logo.png";
 import logoWatermark from "../../assets/logo-watermark.png";
+import { Link } from "react-router-dom";
 
 function Sidebar() {
   const [selectedNav, setSelectedNav] = useState(1);
@@ -17,7 +18,9 @@ function Sidebar() {
       </div>
       <div className="sidebar__navlinks">
         {/* Profile */}
-        <div
+        <Link
+          id="router__link"
+          to="/profile"
           className={`sidebar__navlinks__option userNav__container ${
             selectedNav === 1 ? "selectedNav" : ""
           }`}
@@ -31,10 +34,12 @@ function Sidebar() {
           <p className="sidebar__navlinks__option--text userNav__container--username">
             John Doe
           </p>
-        </div>
+        </Link>
 
         {/* Discover */}
-        <div
+        <Link
+          id="router__link"
+          to="/"
           className={`sidebar__navlinks__option ${
             selectedNav === 2 ? "selectedNav" : ""
           }`}
@@ -42,10 +47,12 @@ function Sidebar() {
         >
           <BiNavigation className="sidebar__navlinks__option--icon" />
           <p className="sidebar__navlinks__option--text">Discover</p>
-        </div>
+        </Link>
 
         {/* Saved */}
-        <div
+        <Link
+          id="router__link"
+          to="/saved"
           className={`sidebar__navlinks__option ${
             selectedNav === 3 ? "selectedNav" : ""
           }`}
@@ -53,10 +60,12 @@ function Sidebar() {
         >
           <BsBookmarkHeart className="sidebar__navlinks__option--icon" />
           <p className="sidebar__navlinks__option--text">Saved</p>
-        </div>
+        </Link>
 
         {/* Visits */}
-        <div
+        <Link
+          id="router__link"
+          to="/visits"
           className={`sidebar__navlinks__option ${
             selectedNav === 4 ? "selectedNav" : ""
           }`}
@@ -64,10 +73,12 @@ function Sidebar() {
         >
           <BsCalendarRange className="sidebar__navlinks__option--icon" />
           <p className="sidebar__navlinks__option--text">Visits</p>
-        </div>
+        </Link>
 
         {/* Chat */}
-        <div
+        <Link
+          id="router__link"
+          to="/chat"
           className={`sidebar__navlinks__option ${
             selectedNav === 5 ? "selectedNav" : ""
           }`}
@@ -75,21 +86,25 @@ function Sidebar() {
         >
           <BsChat className="sidebar__navlinks__option--icon" />
           <p className="sidebar__navlinks__option--text">Chat</p>
-        </div>
+        </Link>
 
         {/* Notification */}
-        <div
+        <Link
+          id="router__link"
+          to="/notifications"
           className={`sidebar__navlinks__option ${
             selectedNav === 6 ? "selectedNav" : ""
           }`}
           onClick={() => setSelectedNav(6)}
         >
           <RiNotification3Line className="sidebar__navlinks__option--icon" />
-          <p className="sidebar__navlinks__option--text">Notification</p>
-        </div>
+          <p className="sidebar__navlinks__option--text">Notifications</p>
+        </Link>
 
         {/* Settings */}
-        <div
+        <Link
+          id="router__link"
+          to="/settings"
           className={`sidebar__navlinks__option ${
             selectedNav === 7 ? "selectedNav" : ""
           }`}
@@ -97,10 +112,12 @@ function Sidebar() {
         >
           <BiCog className="sidebar__navlinks__option--icon" />
           <p className="sidebar__navlinks__option--text">Settings</p>
-        </div>
+        </Link>
 
         {/* Logout */}
-        <div
+        <Link
+          id="router__link"
+          to="/signIn"
           className={`sidebar__navlinks__option ${
             selectedNav === 8 ? "selectedNav" : ""
           }`}
@@ -108,7 +125,7 @@ function Sidebar() {
         >
           <BiLogOutCircle className="sidebar__navlinks__option--icon" />
           <p className="sidebar__navlinks__option--text">Logout</p>
-        </div>
+        </Link>
       </div>
 
       {/* Credits */}

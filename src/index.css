@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+#router__link {
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   background-color: white;
   font-family: "Rubik", sans-serif;
