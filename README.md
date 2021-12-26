@@ -1,6 +1,6 @@
-# **Design**
+# 🎨 **Design**
 
-## TODOS
+## ✅ TODOS
 
 ### Sidebar
 
@@ -42,21 +42,39 @@ A stepper-form for post data insertion. It must contain the following steps:
   - When a student schedule a visit
 - [ ] Post preview
 
-# **Dev**
+## Pages
 
-## TODOS
+- [x] Discover page
+- [ ] Discover_details page [⌛ In process...]
+- [ ] Saved page
+- [ ] Visits page
+- [ ] Chat page
+- [ ] Notifications page
+- [ ] Settings page
+- [ ] SignIn page
 
-### Routs
+# 👨‍💻 **Dev**
 
-- [ ] Add routing -- React-router ??
-- [ ] root file rout structure
-- [ ] Add discover route
+## ✅ TODOS
+
+### Routes
+
+- [x] Add routing -- React-router ??
+- [x] Root file rout structure
+- [x] Add routes
 
 ### Pages
 
-- [ ] Discover_details page -- Design available !!
+- [x] Discover page -- Design available !! [♻️ Future updates]
+- [ ] Discover_details page -- Design available !! [⌛ In process...]
+- [ ] Saved page
+- [ ] Visits page
+- [ ] Chat page
+- [ ] Notifications page
+- [ ] Settings page
+- [ ] SignIn page
 
-### Sidebar
+### Sidebar [ ❎ Finished ]
 
 - [x] Spread the User_Profile
   - [x] Profile
