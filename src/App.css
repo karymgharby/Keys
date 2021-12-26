@@ -1,0 +1,9 @@
+.app {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.app__main {
+  flex: 1;
+}
