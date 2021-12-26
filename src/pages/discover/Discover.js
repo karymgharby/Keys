@@ -1,11 +1,9 @@
 import "./Discover.css";
-import Sidebar from "../../components/sidebar/Sidebar";
 import Map from "../../components/map/Map";
 import Post from "../../components/post/Post";
 export default function Discover() {
   return (
     <div className="discover">
-      <Sidebar />
       <div className="discover__posts">
         <h1 className="page__title">Discover</h1>
         <p className="page__navigation">Discover {">"} Houses</p>
