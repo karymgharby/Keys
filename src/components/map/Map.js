@@ -11,7 +11,7 @@ export default function Map() {
   };
 
   const [viewport, setViewport] = useState({
-    width: "30vw",
+    width: "32vw",
     height: "100vh",
     latitude: 36.710161050637595,
     longitude: 10.428860882171598,
@@ -22,7 +22,7 @@ export default function Map() {
     //get user location
     navigator.geolocation.getCurrentPosition((pos) => {
       setViewport({
-        width: "35vw",
+        width: "32vw",
         height: "100vh",
         zoom: 13,
         latitude: pos.coords.latitude,
