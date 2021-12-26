@@ -12,6 +12,9 @@
 .carte__img {
   display: block;
   border-radius: 20px;
+  width: 280px;
+  height: 220px;
+  object-fit: cover;
 }
 /*description*/
 .carte_detaille {

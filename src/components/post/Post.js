@@ -1,17 +1,22 @@
 import React, { useState } from "react";
 import "./Post.css";
-import test_img from "../../assets/test_img.jpg";
 import { Rating } from "@mui/material";
 import { BiBed, BiBath, BiShapeSquare } from "react-icons/bi";
 import { RiCollageLine } from "react-icons/ri";
 import { AiOutlineWifi } from "react-icons/ai";
 
-const Post = ({ postLocalisation, postTitle, postDescription, postPrice }) => {
+const Post = ({
+  postLocalisation,
+  postTitle,
+  postDescription,
+  postPrice,
+  houseImage,
+}) => {
   const [value, setValue] = useState("");
   return (
     <div className="carte__main">
       <div className="carte__img">
-        <img src={test_img} className="carte__img" alt="test" />
+        <img src={houseImage} className="carte__img" alt="test" />
       </div>
       <div className="carte_detaille">
         <div className="info_img">
