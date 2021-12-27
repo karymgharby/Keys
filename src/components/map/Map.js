@@ -1,61 +1,38 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import ReactMapGL, { NavigationControl } from "react-map-gl";
 import "./Map.css";
 import searchicon from "../../assets/Icons/search.icon.svg";
 import MarkerHome from "./marker/Map.Marker";
 
-export default function Map() {
+export default function Map({ mapFlexWidth }) {
   const navControlStyle = {
     right: 10,
     bottom: 30,
   };
 
   const [viewport, setViewport] = useState({
-    width: "32vw",
-    height: "100vh",
     latitude: 36.710161050637595,
     longitude: 10.428860882171598,
     zoom: 13,
   });
 
-  useEffect(() => {
-    //get user location
-    navigator.geolocation.getCurrentPosition((pos) => {
-      setViewport({
-        width: "32vw",
-        height: "100vh",
-        zoom: 13,
-        latitude: pos.coords.latitude,
-        longitude: pos.coords.longitude,
-      });
-      console.log(pos);
-    });
-  }, []);
-
   return (
-    <div className="mapview__container">
-      <ReactMapGL
-        className="mapview__map"
-        mapStyle={process.env.REACT_APP_MAPBOX_STYLE}
-        {...viewport}
-        mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
-        onViewportChange={(nextViewport) => setViewport(nextViewport)}
-        // onClick={(e) =>
-        //   setMarkerCoord({
-        //     lng: e.lngLat[0],
-        //     lat: e.lngLat[1],
-        //   })
-        // }
-      >
-        <div className="map__search">
-          <input placeholder="Search..." className="map__search--input" />
-          <img src={searchicon} alt="Search" className="map__search--icon" />
-        </div>
+    <ReactMapGL
+      {...viewport}
+      width="100%"
+      height="100%"
+      mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
+      mapStyle={process.env.REACT_APP_MAPBOX_STYLE}
+      onViewportChange={(viewport) => setViewport(viewport)}
+    >
+      <div className="map__search">
+        <input placeholder="Search..." className="map__search--input" />
+        <img src={searchicon} alt="Search" className="map__search--icon" />
+      </div>
 
-        <MarkerHome />
+      <MarkerHome />
 
-        <NavigationControl style={navControlStyle} />
-      </ReactMapGL>
-    </div>
+      <NavigationControl style={navControlStyle} />
+    </ReactMapGL>
   );
 }
