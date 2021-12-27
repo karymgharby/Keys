@@ -4,7 +4,7 @@ import "./Map.css";
 import searchicon from "../../assets/Icons/search.icon.svg";
 import MarkerHome from "./marker/Map.Marker";
 
-export default function Map({ mapFlexWidth }) {
+export default function Map() {
   const navControlStyle = {
     right: 10,
     bottom: 30,
