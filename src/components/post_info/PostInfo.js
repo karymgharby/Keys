@@ -7,7 +7,7 @@ import { AiOutlineWifi } from "react-icons/ai";
 
 function PostInfo() {
   return (
-    <div className="post">
+    
       <div className="post_details">
         <div className="post_title">
           <p>Details</p>
@@ -39,9 +39,6 @@ function PostInfo() {
             Great for entertaining: spacious, updated 2 bedroom, 1 bathroom
             apartment in Lakeview, available May 1st. Close to nightlife with
             private backyard.
-            <br /> <br /> wifi , 2 bedrooms , available May 1st. Close to
-            nightlife with private backyard. available May 1st. Close to
-            nightlife with private acces
           </p>
         </div>
 
@@ -57,7 +54,7 @@ function PostInfo() {
           <Button className="post_visit-button">Validate</Button>
         </div>
       </div>
-    </div>
+   
   );
 }
 

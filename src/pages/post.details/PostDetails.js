@@ -13,7 +13,7 @@ export default function PostDetails() {
         <PostPreview />
         <div className="Postdetails__more">
           <PostInfo />
-          {/* Post reviews */}
+          <PostReviews/>
         </div>
       </div>
       <div className="Postdetails__mapview">

@@ -1,0 +1,78 @@
+.post_reviews{
+    margin: 40px 0px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.post_reviews-title{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post_reviews-title-text{
+    margin-right: 10px;
+    font-size: large;
+    color: #2A8BF2;
+    font-weight: 600;
+}
+
+.post_reviews-title-line{
+    height: 1px;
+    background-color: lightgray;
+    flex: 1;
+
+
+}
+
+.post_reviews-user{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+
+
+.post_reviews-user-img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.post_reviews-user-info{
+    padding-left:10px;
+    
+    
+}
+
+.post_reviews-user-left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.post_reviews-user-info > p{
+    
+    min-height: 20px;
+    font-size: 13px;
+    line-height: 20px;
+
+}
+
+.post_reviews-user-rating {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: x-small;
+}
+
+.post_reviews-feedback{
+    font-size: small;
+    color: #707C97;
+}
