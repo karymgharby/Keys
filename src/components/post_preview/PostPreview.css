@@ -5,6 +5,12 @@
   padding: 10px 0px;
 }
 
+.postPreview__details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
 .postPreview__details--title {
   font-size: xx-large;
   font-weight: 600;
