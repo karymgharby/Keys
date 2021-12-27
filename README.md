@@ -1,3 +1,13 @@
+<div style="text-align:center">
+<img src="./src/assets/Keys_logo.png#logo" alt="drawing" style="width:50%;"/>
+</div>
+
+# Description
+
+Keys is a web app for house rental.
+
+---
+
 # 🎨 **Design**
 
 ## ✅ TODOS
