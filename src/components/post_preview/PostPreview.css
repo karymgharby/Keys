@@ -1,0 +1,54 @@
+.postPreview {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.postPreview__image {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+.postPreview__details {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.postPreview__details--title {
+  font-size: xx-large;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.postPreview__details--localization {
+  font-size: smaller;
+  color: #6e798c;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.postPreview__details--rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.postPreview__details__price {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  color: #2182e9;
+  width: 100%;
+}
+
+.postPreview__details__price--periode {
+  color: #6e798c;
+  font-size: smaller;
+}
