@@ -7,8 +7,7 @@ import { AiOutlineWifi } from "react-icons/ai";
 
 function PostInfo() {
   return (
-    
-      <div className="post_details">
+      <div className="postInfo">
         <div className="post_title">
           <p>Details</p>
         </div>
@@ -54,7 +53,6 @@ function PostInfo() {
           <Button className="post_visit-button">Validate</Button>
         </div>
       </div>
-   
   );
 }
 

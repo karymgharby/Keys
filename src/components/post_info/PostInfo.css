@@ -1,65 +1,61 @@
-
-.post_details{
-    margin: 40px 60px;
-    display: flex;
-    flex-direction: column;
-    
-    width: 45%;
+.postInfo {
+  display: flex;
+  flex-direction: column;
+   flex: 1;
+  margin: 40px 0px;
+  padding: 0px 30px;
 }
-.post_title{
-    letter-spacing: 0.01em;
-    font-size: large;
-    color: #2A8BF2;
-    font-weight: 600;
+.post_title {
+  letter-spacing: 0.01em;
+  font-size: large;
+  color: #2a8bf2;
+  font-weight: 600;
 }
-
 
 .house_icons {
-    margin: 15px 0px;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-  }
+  margin: 15px 0px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
 
-  .icons {
+.icons {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  line-height: 25px;
+  color: #6e798c;
+  margin-right: 20px;
+}
 
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    line-height: 25px;
-    color: #6e798c;
-    margin-right: 20px;
-  }
+.post_description {
+  color: #6e798c;
+  font-weight: 300;
+  font-size: 15px;
+}
 
-  .post_description{
+.post_visit {
+  display: flex;
+  margin: 30px 0px;
+}
 
-      color: #6e798c;
-      font-weight: 300;
-      font-size: 15px;
-  }
+.post_visit-date {
+  color: #6e798c;
+  font-weight: 500;
+  font-size: 13px;
+}
 
-  .post_visit{
-      display: flex;
-      margin: 30px 0px;
-   
-  }
-
-  .post_visit-date{
-      color:#6e798c ;
-      font-weight: 500;
-      font-size: 13px;
-  }
-
-  .post_visit-button{
-      padding: 4px 27px  !important;
-      color: white !important;
-      font-size: meduim;
-      border: none;
-      font-weight: 500;
-    background: linear-gradient(94.96deg, #B9DBFF 0%, #2A8BF2 100%);
-    /* Shadow 3 */
-    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 5px 5px 10px rgba(170, 170, 204, 0.25), 10px 10px 20px rgba(170, 170, 204, 0.5), -10px -10px 20px #FFFFFF;
-    border-radius: 12px;
-  }
-
+.post_visit-button {
+  padding: 4px 27px !important;
+  color: white !important;
+  font-size: meduim;
+  border: none;
+  font-weight: 500;
+  background: linear-gradient(94.96deg, #b9dbff 0%, #2a8bf2 100%);
+  /* Shadow 3 */
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(170, 170, 204, 0.25),
+    10px 10px 20px rgba(170, 170, 204, 0.5), -10px -10px 20px #ffffff;
+  border-radius: 12px;
+}
