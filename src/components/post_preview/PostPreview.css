@@ -1,7 +1,9 @@
+
 .postPreview {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+
 }
 
 .postPreview__image {
@@ -51,4 +53,9 @@
 .postPreview__details__price--periode {
   color: #6e798c;
   font-size: smaller;
+}
+
+.postPreview_details{
+  display: flex;
+  
 }

@@ -1,10 +1,13 @@
 import "./PostPreview.css";
 import { useState } from "react";
 import { BiMap } from "react-icons/bi";
+import PostDetails from "../post_details/PostDetails";
+
 
 export default function PostPreview() {
   const [rating, setRating] = useState(5);
   return (
+    <div className="preview">
     <div className="postPreview">
       {/* This is a temporary placeholder it will be replaced with a 3d slider */}
       <img
@@ -32,6 +35,13 @@ export default function PostPreview() {
           <p className="postPreview__details__price--periode">/month</p>
         </div>
       </div>
+      </div>
+      <div className="postPreview_details">
+        <PostDetails/>
+        
+      </div>
+    
     </div>
+    
   );
 }
