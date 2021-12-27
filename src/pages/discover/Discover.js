@@ -21,7 +21,9 @@ export default function Discover() {
           />
         </Link>
       </div>
-      <Map />
+      <div className="discover__mapview">
+        <Map />
+      </div>
     </div>
   );
 }
