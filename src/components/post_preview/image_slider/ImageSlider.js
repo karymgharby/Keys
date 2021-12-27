@@ -23,7 +23,7 @@ export default function ImageSlider() {
 
   const PrevArrow = ({ onClick }) => {
     return (
-      <div className="arrow next" onClick={onClick}>
+      <div className="arrow previous" onClick={onClick}>
         <FaArrowLeft />
       </div>
     );

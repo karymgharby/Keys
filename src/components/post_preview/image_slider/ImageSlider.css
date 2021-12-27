@@ -27,3 +27,41 @@
   margin: 0 auto;
   border-radius: 20px;
 }
+
+.arrow {
+  position: absolute;
+  bottom: -27px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.arrow {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(33, 130, 233, 0.2);
+}
+
+.arrow svg {
+  transition: all ease-in-out 0.3s;
+}
+
+.arrow svg:hover {
+  color: #2182e9;
+}
+
+.arrow svg:active {
+  transform: scale(1.1);
+  color: #2182e9;
+}
+
+.previous {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
