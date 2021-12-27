@@ -1,7 +1,7 @@
-import Map from "../../components/map/Map";
 import PostPreview from "../../components/post_preview/PostPreview";
+import PostInfo from "../../components/post_info/PostInfo";
+import Map from "../../components/map/Map";
 import "./PostDetails.css";
-
 export default function PostDetails() {
   return (
     <div className="Postdeatils">
@@ -11,9 +11,8 @@ export default function PostDetails() {
           Discover {">"} Houses {">"} Details
         </p>
         <PostPreview />
-
         <div className="Postdetails__more">
-          {/* Post details */}
+          <PostInfo />
           {/* Post reviews */}
         </div>
       </div>
