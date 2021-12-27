@@ -2,14 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-}
-
-.postPreview__image {
-  width: 400px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 20px;
-  margin-right: 20px;
+  padding: 10px 0px;
 }
 
 .postPreview__details {
