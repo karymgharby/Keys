@@ -1,9 +1,16 @@
 .postInfo {
   display: flex;
   flex-direction: column;
-   flex: 1;
-  margin: 40px 0px;
-  padding: 0px 30px;
+  flex: 1;
+  margin: 10px 0px;
+  padding: 20px;
+  margin-right: 5px;
+  border-radius: 20px;
+  background-color: white;
+  min-height: fit-content;
+  max-height: 350px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 .post_title {
   letter-spacing: 0.01em;
@@ -37,13 +44,24 @@
 
 .post_visit {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin: 30px 0px;
+  width: 100%;
 }
 
 .post_visit-date {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.post_visit-date--text {
   color: #6e798c;
   font-weight: 500;
   font-size: 13px;
+  flex: 1;
+  margin-right: 10px;
 }
 
 .post_visit-button {

@@ -8,6 +8,7 @@
   justify-content: space-between;
   padding: 10px 20px;
   margin: 5px 0px;
+  background-color: white;
 }
 .carte__img {
   display: block;
