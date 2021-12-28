@@ -1,5 +1,6 @@
 import PostPreview from "../../components/post_preview/PostPreview";
 import PostInfo from "../../components/post_info/PostInfo";
+import PostReviews from "../../components/post_reviews/PostReviews";
 import Map from "../../components/map/Map";
 import "./PostDetails.css";
 export default function PostDetails() {
@@ -13,7 +14,7 @@ export default function PostDetails() {
         <PostPreview />
         <div className="Postdetails__more">
           <PostInfo />
-          <PostReviews/>
+          <PostReviews />
         </div>
       </div>
       <div className="Postdetails__mapview">
