@@ -1,15 +1,19 @@
-<div style="text-align:center">
-<img src="./src/assets/Keys_logo.png#logo" alt="drawing" style="width:40%;"/>
-</div>
-<br>
-<br>
-Keys is a web app for house rental.
-<br>
-<br>
-
 # 🎨 **Design**
 
 ## ✅ TODOS
+
+---
+
+## Pages
+
+- [x] Discover page
+- [x] Discover_details page
+- [ ] Saved page
+- [ ] Visits page
+- [ ] Chat page
+- [ ] Notifications page
+- [ ] Settings page
+- [ ] SignIn page
 
 ### Sidebar
 
@@ -22,16 +26,8 @@ Keys is a web app for house rental.
 ### Discover Page
 
 - [ ] Filters
-
   - must be a popup
   - Set params for the search
-
-- [ ] Pannel {RDV-VISIT}
-
-  - Reminders and scheduled visits
-
-- [ ] Favorite
-  - Saved posts
 
 ### Create a post
 
@@ -51,17 +47,6 @@ A stepper-form for post data insertion. It must contain the following steps:
   - When a student schedule a visit
 - [ ] Post preview
 
-## Pages
-
-- [x] Discover page
-- [ ] Discover_details page [⌛ In process...]
-- [ ] Saved page
-- [ ] Visits page
-- [ ] Chat page
-- [ ] Notifications page
-- [ ] Settings page
-- [ ] SignIn page
-
 # 👨‍💻 **Dev**
 
 ## ✅ TODOS
@@ -75,7 +60,7 @@ A stepper-form for post data insertion. It must contain the following steps:
 ### Pages
 
 - [x] Discover page -- Design available !! [♻️ Future updates]
-- [ ] Discover_details page -- Design available !! [⌛ In process...]
+- [x] Discover_details page -- Design available !! [⌛ Review process ...]
 - [ ] Saved page
 - [ ] Visits page
 - [ ] Chat page
