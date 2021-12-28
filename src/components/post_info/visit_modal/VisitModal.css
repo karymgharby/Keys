@@ -1,0 +1,27 @@
+.visitModal__datePreview {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  border: 1px solid rgba(33, 130, 233);
+  border-radius: 25px;
+  min-width: 130px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.visitModal__datePreview--date {
+  font-size: small;
+  color: rgb(133, 168, 209);
+}
+
+.visitModal__datePreview--icon {
+  color: rgb(133, 168, 209);
+}
+
+#modal-title {
+  font-size: large;
+  font-weight: 400;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
