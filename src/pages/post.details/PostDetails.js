@@ -1,8 +1,7 @@
 import PostPreview from "../../components/post_preview/PostPreview";
 import PostInfo from "../../components/post_info/PostInfo";
-import PostReviews from "../../components/post_reviews/PostReviews";
 import Map from "../../components/map/Map";
-import PostReviews from '../../components/post_reviews/PostReviews'
+import PostReviews from "../../components/post_reviews/PostReviews";
 import "./PostDetails.css";
 export default function PostDetails() {
   return (
